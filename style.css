@@ -1,0 +1,315 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+      display: flex;
+      height: 100vh;
+      width: auto;
+      background-color: slategray;
+}
+.sidebar{
+    position: absolute;
+    height: 100vh;
+    background-color: dimgrey;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+
+}
+.sidebar nav ul li a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+
+.main{
+    width: 90vw;
+    height: 100vh;
+}
+.infocontainer{
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 15px ;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 55px;
+
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.about{
+    font-size: 40px;}
+.buttons{
+    margin-top:34px ;
+
+
+
+}
+.btn{
+    margin:0 4px;
+    margin-top: 22px;
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: azure;
+    background-color: darkgray;
+    font-weight: bold;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 0 3px;
+
+    
+}
+.btn-sm{
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: blue;
+}
+
+
+.devpic img{
+    width: 301px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+/** contactform**/
+.contactform{
+    margin-top: 144px; 
+    padding: 0 100px;
+    font-size: medium;
+    margin: 0px 88px;
+
+}
+.contactform h1{
+ font-family: 'Courier New', Courier, monospace;   
+
+}
+.contactform  form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.contactform  form div input{
+    width:  16vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+.mb-1{
+   flex-direction: column;
+   
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+
+}
+#emailHelp{
+    color: rgb(196, 220, 228); 
+    font-size: small;
+    margin: 0 5px;
+    padding: 3px 0 0 0 ;
+}
+    
+.submitb{
+    color:black;
+    border-radius: 0%;
+    margin: 2px 2px 0px 0px;
+    padding: 4px 4px 4px 4px;
+
+}
+
+.footer{
+    margin-top: 70px;
+}
+
+
+/** skills.html**/
+.skills{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.skills h1{
+    margin: 10px 10px;
+}
+.pic1{
+    padding: 20px 200px;
+}
+
+.pic1 div h1
+{
+    justify-content: space-around;
+    color: aqua;
+    padding-left: 10px;
+    margin-top: 15px;
+
+}
+.first {
+    margin-bottom: 40px;
+
+}
+
+.first fa-brands{
+    margin-bottom: 5px;
+}
+
+
+/**project**/
+
+.p{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0px 220px;
+
+}
+.p h3{
+    font-size: 25px;
+    justify-content: space-around;
+    
+
+}
+
+.p p{
+    font-size: 20px;
+    padding: 2px 4px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.p a{
+    margin: 2px 4px;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+.cross{
+    margin-left:150px ;
+}
+.sidebarGo{
+    transform: translate(-200px, 0px);
+    position: absolute;
+}
+
+
+/**css for small screen**/
+
+@media ( max-width:477px){
+    .container{
+        height: auto;
+        width: 200vw;
+        background-color: fixed;
+        position: fixed;
+    
+      }
+      .h3{
+        font-size: large;
+      }
+    .sidebar{
+        width: 100px;
+        
+
+    }
+    
+    .sidebar ul li a{
+        font-size: medium;
+        padding-left:  0px;
+        
+    }
+    .sidebarGo{
+        width: 20px;
+
+    }
+    .cross{
+        margin-left: 55px;
+
+    }
+    .hello{
+        font-size:xx-large ;
+    }
+    .name{ 
+        font-size: x-large;
+    }
+    .about{
+        font-size: large;
+    }
+    .buttons{
+        justify-content: space-around;
+        height: 20px;
+        width: 40px;
+    }
+    .btn{
+        height: 50px;
+        width: 100px;
+        font-size: small;
+    }
+    .devpic img{
+        height: 150px;
+        width: 150px;
+        margin-right:160px ;
+        margin-top: 2px;
+
+    }
+    .p h3{
+        font-size: x-large;
+        background-color: aqua;
+
+    }
+    .contactform{
+        padding: 50px;
+        font-size: xx-large;
+    }
+    .mb-1{
+        margin-top: 500px;
+        
+    }
+}
+
+
+@media ( max-width:1615px){
+    .container{
+        height: auto;
+        width: 200vw;
+        position: fixed;
+    
+    }
+    .sidebar{
+        width: 150px;
+    
+    }
+    
+    .cross{
+        margin-left: 100px;}
+}
